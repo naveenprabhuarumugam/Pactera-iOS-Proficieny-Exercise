@@ -15,23 +15,23 @@
 		44CFE26C1B6BAD6D00E296A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CFE2691B6BAD6D00E296A8 /* Default-568h@2x.png */; };
 		44CFE26D1B6BAD6D00E296A8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CFE26A1B6BAD6D00E296A8 /* Default.png */; };
 		44CFE26E1B6BAD6D00E296A8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CFE26B1B6BAD6D00E296A8 /* Default@2x.png */; };
-		44CFE2971B6BB81600E296A8 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2731B6BB81600E296A8 /* AFHTTPRequestOperation.m */; };
-		44CFE2981B6BB81600E296A8 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2751B6BB81600E296A8 /* AFHTTPRequestOperationManager.m */; };
-		44CFE2991B6BB81600E296A8 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2771B6BB81600E296A8 /* AFHTTPSessionManager.m */; };
-		44CFE29A1B6BB81600E296A8 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE27A1B6BB81600E296A8 /* AFNetworkReachabilityManager.m */; };
-		44CFE29B1B6BB81600E296A8 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE27C1B6BB81600E296A8 /* AFSecurityPolicy.m */; };
-		44CFE29C1B6BB81600E296A8 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE27E1B6BB81600E296A8 /* AFURLConnectionOperation.m */; };
-		44CFE29D1B6BB81600E296A8 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2801B6BB81600E296A8 /* AFURLRequestSerialization.m */; };
-		44CFE29E1B6BB81600E296A8 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2821B6BB81600E296A8 /* AFURLResponseSerialization.m */; };
-		44CFE29F1B6BB81600E296A8 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2841B6BB81600E296A8 /* AFURLSessionManager.m */; };
-		44CFE2A01B6BB81600E296A8 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2871B6BB81600E296A8 /* AFNetworkActivityIndicatorManager.m */; };
-		44CFE2A11B6BB81600E296A8 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2891B6BB81600E296A8 /* UIActivityIndicatorView+AFNetworking.m */; };
-		44CFE2A21B6BB81600E296A8 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE28B1B6BB81600E296A8 /* UIAlertView+AFNetworking.m */; };
-		44CFE2A31B6BB81600E296A8 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE28D1B6BB81600E296A8 /* UIButton+AFNetworking.m */; };
-		44CFE2A41B6BB81600E296A8 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE28F1B6BB81600E296A8 /* UIImageView+AFNetworking.m */; };
-		44CFE2A51B6BB81600E296A8 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2921B6BB81600E296A8 /* UIProgressView+AFNetworking.m */; };
-		44CFE2A61B6BB81600E296A8 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2941B6BB81600E296A8 /* UIRefreshControl+AFNetworking.m */; };
-		44CFE2A71B6BB81600E296A8 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2961B6BB81600E296A8 /* UIWebView+AFNetworking.m */; };
+		44CFE2971B6BB81600E296A8 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2731B6BB81600E296A8 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE2981B6BB81600E296A8 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2751B6BB81600E296A8 /* AFHTTPRequestOperationManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE2991B6BB81600E296A8 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2771B6BB81600E296A8 /* AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE29A1B6BB81600E296A8 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE27A1B6BB81600E296A8 /* AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE29B1B6BB81600E296A8 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE27C1B6BB81600E296A8 /* AFSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE29C1B6BB81600E296A8 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE27E1B6BB81600E296A8 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE29D1B6BB81600E296A8 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2801B6BB81600E296A8 /* AFURLRequestSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE29E1B6BB81600E296A8 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2821B6BB81600E296A8 /* AFURLResponseSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE29F1B6BB81600E296A8 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2841B6BB81600E296A8 /* AFURLSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE2A01B6BB81600E296A8 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2871B6BB81600E296A8 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE2A11B6BB81600E296A8 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2891B6BB81600E296A8 /* UIActivityIndicatorView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE2A21B6BB81600E296A8 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE28B1B6BB81600E296A8 /* UIAlertView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE2A31B6BB81600E296A8 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE28D1B6BB81600E296A8 /* UIButton+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE2A41B6BB81600E296A8 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE28F1B6BB81600E296A8 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE2A51B6BB81600E296A8 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2921B6BB81600E296A8 /* UIProgressView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE2A61B6BB81600E296A8 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2941B6BB81600E296A8 /* UIRefreshControl+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE2A71B6BB81600E296A8 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2961B6BB81600E296A8 /* UIWebView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

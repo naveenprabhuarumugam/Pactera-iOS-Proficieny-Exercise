@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44CFE2411B6BAA4100E296A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2401B6BAA4100E296A8 /* main.m */; };
+		44CFE2441B6BAA4100E296A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2431B6BAA4100E296A8 /* AppDelegate.m */; };
+		44CFE24C1B6BAA4100E296A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CFE24B1B6BAA4100E296A8 /* Images.xcassets */; };
+		44CFE25B1B6BAA4100E296A8 /* PacteraAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE25A1B6BAA4100E296A8 /* PacteraAppTests.m */; };
+		44CFE2681B6BAB7A00E296A8 /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2671B6BAB7A00E296A8 /* SplashScreenViewController.m */; };
+		44CFE26C1B6BAD6D00E296A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CFE2691B6BAD6D00E296A8 /* Default-568h@2x.png */; };
+		44CFE26D1B6BAD6D00E296A8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CFE26A1B6BAD6D00E296A8 /* Default.png */; };
+		44CFE26E1B6BAD6D00E296A8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CFE26B1B6BAD6D00E296A8 /* Default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44CFE2551B6BAA4100E296A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44CFE2331B6BAA4100E296A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44CFE23A1B6BAA4100E296A8;
+			remoteInfo = PacteraApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44CFE23B1B6BAA4100E296A8 /* PacteraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PacteraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CFE23F1B6BAA4100E296A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44CFE2401B6BAA4100E296A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44CFE2421B6BAA4100E296A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		44CFE2431B6BAA4100E296A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44CFE24B1B6BAA4100E296A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		44CFE2541B6BAA4100E296A8 /* PacteraAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PacteraAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CFE2591B6BAA4100E296A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44CFE25A1B6BAA4100E296A8 /* PacteraAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacteraAppTests.m; sourceTree = "<group>"; };
+		44CFE2661B6BAB7A00E296A8 /* SplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenViewController.h; sourceTree = "<group>"; };
+		44CFE2671B6BAB7A00E296A8 /* SplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
+		44CFE2691B6BAD6D00E296A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Supporting Files/Default-568h@2x.png"; sourceTree = "<group>"; };
+		44CFE26A1B6BAD6D00E296A8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Supporting Files/Default.png"; sourceTree = "<group>"; };
+		44CFE26B1B6BAD6D00E296A8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Supporting Files/Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44CFE2381B6BAA4100E296A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CFE2511B6BAA4100E296A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44CFE2321B6BAA4100E296A8 = {
+			isa = PBXGroup;
+			children = (
+				44CFE23D1B6BAA4100E296A8 /* PacteraApp */,
+				44CFE2571B6BAA4100E296A8 /* PacteraAppTests */,
+				44CFE23C1B6BAA4100E296A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44CFE23C1B6BAA4100E296A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44CFE23B1B6BAA4100E296A8 /* PacteraApp.app */,
+				44CFE2541B6BAA4100E296A8 /* PacteraAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44CFE23D1B6BAA4100E296A8 /* PacteraApp */ = {
+			isa = PBXGroup;
+			children = (
+				44CFE2641B6BAB1000E296A8 /* Classes */,
+				44CFE2421B6BAA4100E296A8 /* AppDelegate.h */,
+				44CFE2431B6BAA4100E296A8 /* AppDelegate.m */,
+				44CFE24B1B6BAA4100E296A8 /* Images.xcassets */,
+				44CFE23E1B6BAA4100E296A8 /* Supporting Files */,
+			);
+			path = PacteraApp;
+			sourceTree = "<group>";
+		};
+		44CFE23E1B6BAA4100E296A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44CFE2691B6BAD6D00E296A8 /* Default-568h@2x.png */,
+				44CFE26A1B6BAD6D00E296A8 /* Default.png */,
+				44CFE26B1B6BAD6D00E296A8 /* Default@2x.png */,
+				44CFE23F1B6BAA4100E296A8 /* Info.plist */,
+				44CFE2401B6BAA4100E296A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44CFE2571B6BAA4100E296A8 /* PacteraAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				44CFE25A1B6BAA4100E296A8 /* PacteraAppTests.m */,
+				44CFE2581B6BAA4100E296A8 /* Supporting Files */,
+			);
+			path = PacteraAppTests;
+			sourceTree = "<group>";
+		};
+		44CFE2581B6BAA4100E296A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44CFE2591B6BAA4100E296A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44CFE2641B6BAB1000E296A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44CFE2651B6BAB3D00E296A8 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		44CFE2651B6BAB3D00E296A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44CFE2661B6BAB7A00E296A8 /* SplashScreenViewController.h */,
+				44CFE2671B6BAB7A00E296A8 /* SplashScreenViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44CFE23A1B6BAA4100E296A8 /* PacteraApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44CFE25E1B6BAA4100E296A8 /* Build configuration list for PBXNativeTarget "PacteraApp" */;
+			buildPhases = (
+				44CFE2371B6BAA4100E296A8 /* Sources */,
+				44CFE2381B6BAA4100E296A8 /* Frameworks */,
+				44CFE2391B6BAA4100E296A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacteraApp;
+			productName = PacteraApp;
+			productReference = 44CFE23B1B6BAA4100E296A8 /* PacteraApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44CFE2531B6BAA4100E296A8 /* PacteraAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44CFE2611B6BAA4100E296A8 /* Build configuration list for PBXNativeTarget "PacteraAppTests" */;
+			buildPhases = (
+				44CFE2501B6BAA4100E296A8 /* Sources */,
+				44CFE2511B6BAA4100E296A8 /* Frameworks */,
+				44CFE2521B6BAA4100E296A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44CFE2561B6BAA4100E296A8 /* PBXTargetDependency */,
+			);
+			name = PacteraAppTests;
+			productName = PacteraAppTests;
+			productReference = 44CFE2541B6BAA4100E296A8 /* PacteraAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44CFE2331B6BAA4100E296A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Naveenprabhu Arumugam";
+				TargetAttributes = {
+					44CFE23A1B6BAA4100E296A8 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					44CFE2531B6BAA4100E296A8 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 44CFE23A1B6BAA4100E296A8;
+					};
+				};
+			};
+			buildConfigurationList = 44CFE2361B6BAA4100E296A8 /* Build configuration list for PBXProject "PacteraApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44CFE2321B6BAA4100E296A8;
+			productRefGroup = 44CFE23C1B6BAA4100E296A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44CFE23A1B6BAA4100E296A8 /* PacteraApp */,
+				44CFE2531B6BAA4100E296A8 /* PacteraAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44CFE2391B6BAA4100E296A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CFE26E1B6BAD6D00E296A8 /* Default@2x.png in Resources */,
+				44CFE24C1B6BAA4100E296A8 /* Images.xcassets in Resources */,
+				44CFE26D1B6BAD6D00E296A8 /* Default.png in Resources */,
+				44CFE26C1B6BAD6D00E296A8 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CFE2521B6BAA4100E296A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44CFE2371B6BAA4100E296A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CFE2441B6BAA4100E296A8 /* AppDelegate.m in Sources */,
+				44CFE2411B6BAA4100E296A8 /* main.m in Sources */,
+				44CFE2681B6BAB7A00E296A8 /* SplashScreenViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CFE2501B6BAA4100E296A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CFE25B1B6BAA4100E296A8 /* PacteraAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44CFE2561B6BAA4100E296A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44CFE23A1B6BAA4100E296A8 /* PacteraApp */;
+			targetProxy = 44CFE2551B6BAA4100E296A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		44CFE25C1B6BAA4100E296A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		44CFE25D1B6BAA4100E296A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44CFE25F1B6BAA4100E296A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = PacteraApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44CFE2601B6BAA4100E296A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = PacteraApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		44CFE2621B6BAA4100E296A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PacteraAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PacteraApp.app/PacteraApp";
+			};
+			name = Debug;
+		};
+		44CFE2631B6BAA4100E296A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PacteraAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PacteraApp.app/PacteraApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44CFE2361B6BAA4100E296A8 /* Build configuration list for PBXProject "PacteraApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CFE25C1B6BAA4100E296A8 /* Debug */,
+				44CFE25D1B6BAA4100E296A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44CFE25E1B6BAA4100E296A8 /* Build configuration list for PBXNativeTarget "PacteraApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CFE25F1B6BAA4100E296A8 /* Debug */,
+				44CFE2601B6BAA4100E296A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44CFE2611B6BAA4100E296A8 /* Build configuration list for PBXNativeTarget "PacteraAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CFE2621B6BAA4100E296A8 /* Debug */,
+				44CFE2631B6BAA4100E296A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44CFE2331B6BAA4100E296A8 /* Project object */;
+}

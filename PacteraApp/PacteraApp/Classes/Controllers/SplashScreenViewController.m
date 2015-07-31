@@ -7,6 +7,7 @@
 //
 
 #import "SplashScreenViewController.h"
+#import "NetworkBase.h"
 
 @interface SplashScreenViewController ()
 
@@ -37,11 +38,38 @@
     // Aligns the activity indicator view with centre Y of its superview
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.activityIndicatorView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
     
+    [self.navigationController setNavigationBarHidden:YES];
+    
+    [self.activityIndicatorView startAnimating];
+    [self loadDetailsAboutCanada];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+# pragma mark -
+# pragma mark Custom Methods
+
+-(void)loadDetailsAboutCanada{
+    
+    NetworkBase *networkBaeObj = [[NetworkBase alloc]init];
+    [networkBaeObj fetchDetailsWithBlock:^(ResponseObject *responseObj, NSError *error) {
+        
+        if (!error) {
+            // Success repsosne
+            NSLog(@"Success");
+        }
+        else{
+            
+            // Failure Scenario
+            NSLog(@"Fail");
+        }
+    }];
+    
 }
 
 

@@ -32,6 +32,11 @@
 		44CFE2A51B6BB81600E296A8 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2921B6BB81600E296A8 /* UIProgressView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		44CFE2A61B6BB81600E296A8 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2941B6BB81600E296A8 /* UIRefreshControl+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		44CFE2A71B6BB81600E296A8 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2961B6BB81600E296A8 /* UIWebView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44CFE2AB1B6BBDB800E296A8 /* NetworkBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2AA1B6BBDB800E296A8 /* NetworkBase.m */; };
+		44CFE2AF1B6BBF1900E296A8 /* ResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2AE1B6BBF1900E296A8 /* ResponseObject.m */; };
+		44CFE2B21B6BBF2E00E296A8 /* Details.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2B11B6BBF2E00E296A8 /* Details.m */; };
+		44CFE2B51B6BBF5500E296A8 /* NetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2B41B6BBF5500E296A8 /* NetworkClient.m */; };
+		44CFE2B91B6BC6F400E296A8 /* PacteraUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2B81B6BC6F400E296A8 /* PacteraUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +100,16 @@
 		44CFE2941B6BB81600E296A8 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		44CFE2951B6BB81600E296A8 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		44CFE2961B6BB81600E296A8 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		44CFE2A91B6BBDB800E296A8 /* NetworkBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkBase.h; sourceTree = "<group>"; };
+		44CFE2AA1B6BBDB800E296A8 /* NetworkBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkBase.m; sourceTree = "<group>"; };
+		44CFE2AD1B6BBF1900E296A8 /* ResponseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseObject.h; sourceTree = "<group>"; };
+		44CFE2AE1B6BBF1900E296A8 /* ResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseObject.m; sourceTree = "<group>"; };
+		44CFE2B01B6BBF2E00E296A8 /* Details.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Details.h; sourceTree = "<group>"; };
+		44CFE2B11B6BBF2E00E296A8 /* Details.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Details.m; sourceTree = "<group>"; };
+		44CFE2B31B6BBF5500E296A8 /* NetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClient.h; sourceTree = "<group>"; };
+		44CFE2B41B6BBF5500E296A8 /* NetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClient.m; sourceTree = "<group>"; };
+		44CFE2B71B6BC6F400E296A8 /* PacteraUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacteraUtility.h; sourceTree = "<group>"; };
+		44CFE2B81B6BC6F400E296A8 /* PacteraUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacteraUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +151,7 @@
 		44CFE23D1B6BAA4100E296A8 /* PacteraApp */ = {
 			isa = PBXGroup;
 			children = (
+				44CFE2A81B6BBD9700E296A8 /* Network Extensions */,
 				44CFE2701B6BB81600E296A8 /* Vendor */,
 				44CFE2641B6BAB1000E296A8 /* Classes */,
 				44CFE2421B6BAA4100E296A8 /* AppDelegate.h */,
@@ -178,6 +194,8 @@
 		44CFE2641B6BAB1000E296A8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				44CFE2B61B6BC6D400E296A8 /* Utility */,
+				44CFE2AC1B6BBEE200E296A8 /* Network Models */,
 				44CFE2651B6BAB3D00E296A8 /* Controllers */,
 			);
 			path = Classes;
@@ -249,6 +267,37 @@
 				44CFE2961B6BB81600E296A8 /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		44CFE2A81B6BBD9700E296A8 /* Network Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44CFE2A91B6BBDB800E296A8 /* NetworkBase.h */,
+				44CFE2AA1B6BBDB800E296A8 /* NetworkBase.m */,
+				44CFE2B31B6BBF5500E296A8 /* NetworkClient.h */,
+				44CFE2B41B6BBF5500E296A8 /* NetworkClient.m */,
+			);
+			path = "Network Extensions";
+			sourceTree = "<group>";
+		};
+		44CFE2AC1B6BBEE200E296A8 /* Network Models */ = {
+			isa = PBXGroup;
+			children = (
+				44CFE2AD1B6BBF1900E296A8 /* ResponseObject.h */,
+				44CFE2AE1B6BBF1900E296A8 /* ResponseObject.m */,
+				44CFE2B01B6BBF2E00E296A8 /* Details.h */,
+				44CFE2B11B6BBF2E00E296A8 /* Details.m */,
+			);
+			path = "Network Models";
+			sourceTree = "<group>";
+		};
+		44CFE2B61B6BC6D400E296A8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				44CFE2B71B6BC6F400E296A8 /* PacteraUtility.h */,
+				44CFE2B81B6BC6F400E296A8 /* PacteraUtility.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,20 +404,25 @@
 				44CFE2971B6BB81600E296A8 /* AFHTTPRequestOperation.m in Sources */,
 				44CFE2A41B6BB81600E296A8 /* UIImageView+AFNetworking.m in Sources */,
 				44CFE2441B6BAA4100E296A8 /* AppDelegate.m in Sources */,
+				44CFE2B51B6BBF5500E296A8 /* NetworkClient.m in Sources */,
 				44CFE2981B6BB81600E296A8 /* AFHTTPRequestOperationManager.m in Sources */,
 				44CFE2A51B6BB81600E296A8 /* UIProgressView+AFNetworking.m in Sources */,
 				44CFE29A1B6BB81600E296A8 /* AFNetworkReachabilityManager.m in Sources */,
 				44CFE29E1B6BB81600E296A8 /* AFURLResponseSerialization.m in Sources */,
 				44CFE29C1B6BB81600E296A8 /* AFURLConnectionOperation.m in Sources */,
 				44CFE2A31B6BB81600E296A8 /* UIButton+AFNetworking.m in Sources */,
+				44CFE2AF1B6BBF1900E296A8 /* ResponseObject.m in Sources */,
 				44CFE2A11B6BB81600E296A8 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				44CFE29B1B6BB81600E296A8 /* AFSecurityPolicy.m in Sources */,
+				44CFE2B21B6BBF2E00E296A8 /* Details.m in Sources */,
 				44CFE2A61B6BB81600E296A8 /* UIRefreshControl+AFNetworking.m in Sources */,
 				44CFE2A71B6BB81600E296A8 /* UIWebView+AFNetworking.m in Sources */,
 				44CFE2991B6BB81600E296A8 /* AFHTTPSessionManager.m in Sources */,
 				44CFE2A21B6BB81600E296A8 /* UIAlertView+AFNetworking.m in Sources */,
 				44CFE29D1B6BB81600E296A8 /* AFURLRequestSerialization.m in Sources */,
+				44CFE2B91B6BC6F400E296A8 /* PacteraUtility.m in Sources */,
 				44CFE2A01B6BB81600E296A8 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				44CFE2AB1B6BBDB800E296A8 /* NetworkBase.m in Sources */,
 				44CFE29F1B6BB81600E296A8 /* AFURLSessionManager.m in Sources */,
 				44CFE2411B6BAA4100E296A8 /* main.m in Sources */,
 				44CFE2681B6BAB7A00E296A8 /* SplashScreenViewController.m in Sources */,

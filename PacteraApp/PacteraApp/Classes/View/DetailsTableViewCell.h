@@ -15,11 +15,11 @@
 
 @interface DetailsTableViewCell : UITableViewCell
 
-@property(nonatomic,retain) NSString *detailTitle;
-@property(nonatomic,retain) NSString *detailDescription;
-@property(nonatomic,retain) NSString *detailImageHref;
 
-// Set the data in the UIlabel and imageview and the fonts for the UIlabel
--(void)setDataAndFonts;
+@property (nonatomic,retain) UILabel *titleLabel; // title label which holds the Heading of the table viee cell
+@property (nonatomic,retain) UILabel *detailLabel; // Description content
+@property (nonatomic,retain) UIImageView *detailsImageView; // imageview which loads image url from backgrounds
+
+
 
 @end

@@ -38,7 +38,7 @@ static NSString * const kRows = @"rows";
         [detailsReponseArray enumerateObjectsUsingBlock:^(NSDictionary *responseDict, NSUInteger idx, BOOL *stop) {
             Details *detailObj = [[Details alloc]init];
             
-            // Check for NULL parameter and add then to the array
+            // Check for NULL parameter and add them to the array
             if ([detailObj conformsToValues:responseDict]) {
                 [detailsObjArray addObject:detailObj];
             }

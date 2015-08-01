@@ -26,25 +26,27 @@ static NSString * const kImageHref = @"imageHref";
         return NO;
     }
     
+    
+    if ([utility isValidString:[reponseDict valueForKeyPath:kDescription]] ) {
+        self.detailedDescription = [reponseDict valueForKeyPath:kDescription];
+    }
+    else{
+        self.detailedDescription = @"Sorry, No Description Available";
+    }
+    if ([utility isValidString:[reponseDict valueForKeyPath:kImageHref]] ) {
+        self.imageHref = [reponseDict valueForKeyPath:kImageHref];
+    }
+    else{
+        self.imageHref = @"";
+    }
+    
     self.title = [reponseDict valueForKeyPath:kTitleName];
-    self.detailedDescription = [reponseDict valueForKeyPath:kDescription];
-    self.imageHref = [reponseDict valueForKeyPath:kImageHref];
     
     return YES;
 }
 
 
-#pragma mark -
-#pragma mark Dealloc Method
--(void)dealloc{
-    
-    [_title release];
-    [_detailedDescription release];
-    [_imageHref release];
-    
-    [super dealloc];
-    
-}
+
 
 
 @end

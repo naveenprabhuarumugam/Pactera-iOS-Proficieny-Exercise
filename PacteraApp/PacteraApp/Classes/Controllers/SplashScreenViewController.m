@@ -70,7 +70,8 @@
             
             // Instantiate the DetaisTableViewcontroller with plain style and set the response object paramter
             DetailsTableViewController *detailsTableViewControllerObj= [[DetailsTableViewController alloc]initWithStyle:UITableViewStylePlain];
-            [detailsTableViewControllerObj setResponseObject:self.responeObject];
+            
+            [detailsTableViewControllerObj setResponseObject:responseObj];
             
             // Push the tableview contoller on to the stack
             [self.navigationController pushViewController:detailsTableViewControllerObj animated:YES];

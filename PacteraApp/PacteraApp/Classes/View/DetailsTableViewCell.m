@@ -12,8 +12,8 @@
 #import "UIImageView+AFNetworking.h"
 
 #define kLabelHorizontalInsets      10.0f
-#define kLabelVerticalInsets        10.0f
 #define accessoryTypeSpacing 35
+#define highPriority 999
 
 
 
@@ -112,7 +112,7 @@
                                                                         toItem:self.contentView
                                                                      attribute:NSLayoutAttributeTop
                                                                     multiplier:1
-                                                                      constant:kLabelVerticalInsets]];
+                                                                      constant:kLabelHorizontalInsets]];
         
             
         // Does not Convert Autoresizing mask to constraints
@@ -136,7 +136,7 @@
                                                                             toItem:self.titleLabel
                                                                          attribute:NSLayoutAttributeBottom
                                                                         multiplier:1
-                                                                          constant:kLabelVerticalInsets]];
+                                                                          constant:kLabelHorizontalInsets]];
             
         // Add bottom constarint to content view
         NSLayoutConstraint *bottomConstraintForDetailLabel =[NSLayoutConstraint constraintWithItem:self.contentView
@@ -145,7 +145,7 @@
                                                                                     toItem:self.detailLabel
                                                                                     attribute:NSLayoutAttributeBottom
                                                                                     multiplier:1
-                                                                                    constant:kLabelVerticalInsets];
+                                                                                    constant:kLabelHorizontalInsets];
             
             // Set High Prioiryt to the constraint and add the same to conetent view
         [bottomConstraintForDetailLabel setPriority:UILayoutPriorityRequired];
@@ -172,21 +172,21 @@
                                                             attribute:NSLayoutAttributeCenterY
                                                             multiplier:1 constant:0];
         // Set low priority and add to the content view
-        [constraintCentreYForImageView setPriority:UILayoutPriorityDefaultLow];
+        [constraintCentreYForImageView setPriority:highPriority];
         [self.contentView addConstraint:constraintCentreYForImageView];
         
         // Add Top constraint for Inmageview w.r.t the detail label
         NSLayoutConstraint *constraintTopForImageView =[NSLayoutConstraint
                                    constraintWithItem:self.detailsImageView
                                    attribute:NSLayoutAttributeTop
-                                   relatedBy:NSLayoutRelationGreaterThanOrEqual
+                                   relatedBy:NSLayoutRelationEqual
                                    toItem:self.detailLabel
                                    attribute:NSLayoutAttributeTop
                                    multiplier:1
                                    constant:0];
         
         // Set High priority and add to the content view
-        [constraintTopForImageView setPriority:UILayoutPriorityDefaultHigh];
+        [constraintTopForImageView setPriority:UILayoutPriorityDefaultLow];
         [self.contentView addConstraint:constraintTopForImageView];
         
         // Add bottom constraint to imageview w.r.t contnet view
@@ -197,7 +197,7 @@
                                          toItem:self.detailsImageView
                                          attribute:NSLayoutAttributeBottom
                                          multiplier:1
-                                         constant:10]];
+                                         constant:kLabelHorizontalInsets]];
             
         // Setting the Height and Width for the ImageView.
         // NOTE : Constraints for image view are set using Autolayout VFL language

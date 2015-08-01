@@ -18,6 +18,9 @@
 // Response Object contains parsed tittle name and details
 @property (nonatomic,retain) ResponseObject *responeObject;
 
+// Error message from service all is displayed to the user
+-(void)showErrorAlert:(NSError *)error;
+
 @end
 
 @implementation SplashScreenViewController
@@ -85,10 +88,33 @@
             
             // Failure Scenario
             NSLog(@"UnSuccessfull Response Received");
+            
+            // Display error alert to the user
+            [self showErrorAlert:error];
         }
     }];
     
 }
+
+-(void)showErrorAlert:(NSError *)error
+{
+    // Allocate the alertview and set the error message with retry option
+    UIAlertView *alertView=[[[UIAlertView alloc]initWithTitle:@"" message:@"The internet conenction appears to be offline. Kindly connect your device with a network and try again" delegate:self cancelButtonTitle:@"Retry" otherButtonTitles: nil] autorelease];
+    [alertView setDelegate:self];
+    [alertView show];
+}
+
+
+#pragma mark -
+#pragma mark Alertview delegate
+
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    // On tap of retry button in alert invoke network call again
+    [self loadDetailsAboutCanada];
+}
+
 
 
 @end

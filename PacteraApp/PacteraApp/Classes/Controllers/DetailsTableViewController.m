@@ -29,6 +29,9 @@ static NSString *CellIdentifier = @"CellIdentifier";
 
 -(void)handleRefresh;
 
+// Error message from service all is displayed to the user
+-(void)showErrorAlert:(NSError *)error;
+
 @end
 
 @implementation DetailsTableViewController
@@ -129,7 +132,6 @@ static NSString *CellIdentifier = @"CellIdentifier";
     // Set the data to the UITableviewcell
     [cell.titleLabel setText:detailsObj.title];
     [cell.detailLabel setText:detailsObj.detailedDescription];
-    //[cell.detailsImageView setImageWithURL:[NSURL URLWithString:detailsObj.imageHref] placeholderImage:[UIImage imageNamed:@"Noimage"]];
     
     // Make sure the constraints have been added to this cell, since it may have just been created from scratch
     [cell setNeedsUpdateConstraints];
@@ -181,6 +183,9 @@ static NSString *CellIdentifier = @"CellIdentifier";
             
             // Failure Scenario
             NSLog(@"UnSuccessfull Response Received");
+            
+            // Display error alert to the user
+            [self showErrorAlert:error];
         }
         
         
@@ -188,6 +193,14 @@ static NSString *CellIdentifier = @"CellIdentifier";
         [self.refreshControl endRefreshing];
     }];
     
+}
+
+
+-(void)showErrorAlert:(NSError *)error
+{
+    // Allocate the alertview and display the message
+    UIAlertView *alertView=[[[UIAlertView alloc]initWithTitle:@"Error" message:@"The internet conenction appears to be offline. Kindly connect your device with a network and try again" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil] autorelease];
+    [alertView show];
 }
 
 @end

@@ -8,10 +8,15 @@
 
 #import "SplashScreenViewController.h"
 #import "NetworkBase.h"
+#import "DetailsTableViewController.h"
 
 @interface SplashScreenViewController ()
 
-@property (nonatomic,strong) UIActivityIndicatorView *activityIndicatorView;
+// UIActivity Indicato to be displayed when service call is made
+@property (nonatomic,retain) UIActivityIndicatorView *activityIndicatorView;
+
+// Response Object contains parsed tittle name and details
+@property (nonatomic,retain) ResponseObject *responeObject;
 
 @end
 
@@ -61,12 +66,24 @@
         
         if (!error) {
             // Success repsosne
-            NSLog(@"Success");
+            NSLog(@"Success Response");
+            
+            // Instantiate the DetaisTableViewcontroller with plain style and set the response object paramter
+            DetailsTableViewController *detailsTableViewControllerObj= [[DetailsTableViewController alloc]initWithStyle:UITableViewStylePlain];
+            [detailsTableViewControllerObj setResponseObject:self.responeObject];
+            
+            // Push the tableview contoller on to the stack
+            [self.navigationController pushViewController:detailsTableViewControllerObj animated:YES];
+            
+            // Release the table viewcontroller object
+            [detailsTableViewControllerObj release];
+            
+            
         }
         else{
             
             // Failure Scenario
-            NSLog(@"Fail");
+            NSLog(@"UnSuccessfull Response");
         }
     }];
     

@@ -37,6 +37,8 @@
 		44CFE2B21B6BBF2E00E296A8 /* Details.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2B11B6BBF2E00E296A8 /* Details.m */; };
 		44CFE2B51B6BBF5500E296A8 /* NetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2B41B6BBF5500E296A8 /* NetworkClient.m */; };
 		44CFE2B91B6BC6F400E296A8 /* PacteraUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2B81B6BC6F400E296A8 /* PacteraUtility.m */; };
+		44CFE2BC1B6C3B2C00E296A8 /* DetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2BB1B6C3B2C00E296A8 /* DetailsTableViewController.m */; };
+		44CFE2C31B6C421D00E296A8 /* DetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2C21B6C421D00E296A8 /* DetailsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,10 @@
 		44CFE2B41B6BBF5500E296A8 /* NetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClient.m; sourceTree = "<group>"; };
 		44CFE2B71B6BC6F400E296A8 /* PacteraUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacteraUtility.h; sourceTree = "<group>"; };
 		44CFE2B81B6BC6F400E296A8 /* PacteraUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacteraUtility.m; sourceTree = "<group>"; };
+		44CFE2BA1B6C3B2C00E296A8 /* DetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsTableViewController.h; sourceTree = "<group>"; };
+		44CFE2BB1B6C3B2C00E296A8 /* DetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsTableViewController.m; sourceTree = "<group>"; };
+		44CFE2C11B6C421D00E296A8 /* DetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsTableViewCell.h; sourceTree = "<group>"; };
+		44CFE2C21B6C421D00E296A8 /* DetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 		44CFE2641B6BAB1000E296A8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				44CFE2BD1B6C419000E296A8 /* View */,
 				44CFE2B61B6BC6D400E296A8 /* Utility */,
 				44CFE2AC1B6BBEE200E296A8 /* Network Models */,
 				44CFE2651B6BAB3D00E296A8 /* Controllers */,
@@ -206,6 +213,8 @@
 			children = (
 				44CFE2661B6BAB7A00E296A8 /* SplashScreenViewController.h */,
 				44CFE2671B6BAB7A00E296A8 /* SplashScreenViewController.m */,
+				44CFE2BA1B6C3B2C00E296A8 /* DetailsTableViewController.h */,
+				44CFE2BB1B6C3B2C00E296A8 /* DetailsTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -298,6 +307,15 @@
 				44CFE2B81B6BC6F400E296A8 /* PacteraUtility.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		44CFE2BD1B6C419000E296A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44CFE2C11B6C421D00E296A8 /* DetailsTableViewCell.h */,
+				44CFE2C21B6C421D00E296A8 /* DetailsTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,8 +437,10 @@
 				44CFE2A71B6BB81600E296A8 /* UIWebView+AFNetworking.m in Sources */,
 				44CFE2991B6BB81600E296A8 /* AFHTTPSessionManager.m in Sources */,
 				44CFE2A21B6BB81600E296A8 /* UIAlertView+AFNetworking.m in Sources */,
+				44CFE2C31B6C421D00E296A8 /* DetailsTableViewCell.m in Sources */,
 				44CFE29D1B6BB81600E296A8 /* AFURLRequestSerialization.m in Sources */,
 				44CFE2B91B6BC6F400E296A8 /* PacteraUtility.m in Sources */,
+				44CFE2BC1B6C3B2C00E296A8 /* DetailsTableViewController.m in Sources */,
 				44CFE2A01B6BB81600E296A8 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				44CFE2AB1B6BBDB800E296A8 /* NetworkBase.m in Sources */,
 				44CFE29F1B6BB81600E296A8 /* AFURLSessionManager.m in Sources */,

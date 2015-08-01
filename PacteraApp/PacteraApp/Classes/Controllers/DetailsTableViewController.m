@@ -12,7 +12,7 @@
 #import "Details.h"
 #import "UIImageView+AFNetworking.h"
 #import "PacteraUtility.h"
-
+#import "NetworkBase.h"
 
 
 static NSString *CellIdentifier = @"CellIdentifier";
@@ -23,10 +23,11 @@ static NSString *CellIdentifier = @"CellIdentifier";
 // A dictionary of offscreen cells that are used within the tableView:heightForRowAtIndexPath: method to
 // handle the height calculations. These are never drawn onscreen. The dictionary is in the format:
 //      { NSString *reuseIdentifier : UITableViewCell *offscreenCell, ... }
-@property (strong, nonatomic) NSMutableDictionary *offscreenCells;
+@property (retain, nonatomic) NSMutableDictionary *offscreenCells;
 
-- (void)contentSizeCategoryChanged:(NSNotification *)notification;
+@property (nonatomic,retain) UIRefreshControl *refreshControl;
 
+-(void)handleRefresh;
 
 @end
 
@@ -45,6 +46,22 @@ static NSString *CellIdentifier = @"CellIdentifier";
     }
     
     self.tableView.allowsSelection = NO;
+    
+    // Instantiate UIRefreshControl
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc]init];
+    self.refreshControl = refreshControl;
+    [refreshControl release];
+    
+    // Add target and selector to refreshcontrol
+    [self.refreshControl addTarget:self action:@selector(handleRefresh) forControlEvents:UIControlEventValueChanged];
+    
+    [self.tableView addSubview:self.refreshControl];
+    
+    // Unhide the navigation bar and set the title from the response
+    [self.navigationController setNavigationBarHidden:NO];
+    [self.navigationItem setTitle:self.responseObject.title];
+    [self.navigationItem setHidesBackButton:YES];
+    
     
 }
 
@@ -142,48 +159,35 @@ static NSString *CellIdentifier = @"CellIdentifier";
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+#pragma mark -
+#pragma mark Custom Methods
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+-(void)handleRefresh{
+    
+    [self.refreshControl beginRefreshing];
+    // Instantai the Network base object, which is the gate way to make networkcalls
+    NetworkBase *networkBaeObj = [[NetworkBase alloc]init];
+    [networkBaeObj fetchDetailsWithBlock:^(ResponseObject *responseObj, NSError *error) {
+        
+        if (!error) {
+            // Success repsosne
+            NSLog(@"Success Response received");
+            
+            // Update the new response Object with the old one
+            self.responseObject = responseObj;
+            [self.tableView reloadData];
+        }
+        else{
+            
+            // Failure Scenario
+            NSLog(@"UnSuccessfull Response Received");
+        }
+        
+        
+        // Stop the refresh conreol
+        [self.refreshControl endRefreshing];
+    }];
+    
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

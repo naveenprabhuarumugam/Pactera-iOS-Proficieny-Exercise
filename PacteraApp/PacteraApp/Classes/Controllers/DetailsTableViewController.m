@@ -168,7 +168,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
     
     [self.refreshControl beginRefreshing];
     // Instantai the Network base object, which is the gate way to make networkcalls
-    NetworkBase *networkBaeObj = [[NetworkBase alloc]init];
+    NetworkBase *networkBaeObj = [[[NetworkBase alloc]init] autorelease];
     [networkBaeObj fetchDetailsWithBlock:^(ResponseObject *responseObj, NSError *error) {
         
         if (!error) {

@@ -40,33 +40,12 @@ static NSString *CellIdentifier = @"CellIdentifier";
     
     // Setting the estimated row height prevents the table view from calling tableView:heightForRowAtIndexPath: for every row in the table on first load;
     // it will only be called as cells are about to scroll onscreen. This is a major performance optimization.
-    self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
+    if ([self.tableView respondsToSelector:@selector(estimatedRowHeight)]) {
+        self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
+    }
     
     self.tableView.allowsSelection = NO;
     
-}
-
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(contentSizeCategoryChanged:)
-                                                 name:UIContentSizeCategoryDidChangeNotification
-                                               object:nil];
-}
-
--(void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIContentSizeCategoryDidChangeNotification
-                                                  object:nil];
-}
-
-// This method is called when the Dynamic Type user setting changes (from the system Settings app)
-- (void)contentSizeCategoryChanged:(NSNotification *)notification
-{
-    [self.tableView reloadData];
 }
 
 
@@ -121,7 +100,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
     // in a memory leak as the cell is created but never returned from the tableView:cellForRowAtIndexPath: method!
     DetailsTableViewCell *cell = [self.offscreenCells objectForKey:reuseIdentifier];
     if (!cell) {
-        cell = [[DetailsTableViewCell alloc] init];
+        cell = [[[DetailsTableViewCell alloc] init] autorelease];
         [self.offscreenCells setObject:cell forKey:reuseIdentifier];
     }
     

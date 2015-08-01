@@ -11,7 +11,7 @@
 #import "PacteraUtility.h"
 #import "UIImageView+AFNetworking.h"
 
-#define kLabelHorizontalInsets      15.0f
+#define kLabelHorizontalInsets      10.0f
 #define kLabelVerticalInsets        10.0f
 #define accessoryTypeSpacing 35
 

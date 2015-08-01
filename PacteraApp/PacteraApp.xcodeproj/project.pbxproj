@@ -39,6 +39,7 @@
 		44CFE2B91B6BC6F400E296A8 /* PacteraUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2B81B6BC6F400E296A8 /* PacteraUtility.m */; };
 		44CFE2BC1B6C3B2C00E296A8 /* DetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2BB1B6C3B2C00E296A8 /* DetailsTableViewController.m */; };
 		44CFE2C31B6C421D00E296A8 /* DetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2C21B6C421D00E296A8 /* DetailsTableViewCell.m */; };
+		44CFE2C61B6C8DA300E296A8 /* PacteraConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFE2C51B6C8DA300E296A8 /* PacteraConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,8 @@
 		44CFE2BB1B6C3B2C00E296A8 /* DetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsTableViewController.m; sourceTree = "<group>"; };
 		44CFE2C11B6C421D00E296A8 /* DetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsTableViewCell.h; sourceTree = "<group>"; };
 		44CFE2C21B6C421D00E296A8 /* DetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsTableViewCell.m; sourceTree = "<group>"; };
+		44CFE2C41B6C8DA300E296A8 /* PacteraConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacteraConstants.h; sourceTree = "<group>"; };
+		44CFE2C51B6C8DA300E296A8 /* PacteraConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacteraConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +308,8 @@
 			children = (
 				44CFE2B71B6BC6F400E296A8 /* PacteraUtility.h */,
 				44CFE2B81B6BC6F400E296A8 /* PacteraUtility.m */,
+				44CFE2C41B6C8DA300E296A8 /* PacteraConstants.h */,
+				44CFE2C51B6C8DA300E296A8 /* PacteraConstants.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -445,6 +450,7 @@
 				44CFE2AB1B6BBDB800E296A8 /* NetworkBase.m in Sources */,
 				44CFE29F1B6BB81600E296A8 /* AFURLSessionManager.m in Sources */,
 				44CFE2411B6BAA4100E296A8 /* main.m in Sources */,
+				44CFE2C61B6C8DA300E296A8 /* PacteraConstants.m in Sources */,
 				44CFE2681B6BAB7A00E296A8 /* SplashScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

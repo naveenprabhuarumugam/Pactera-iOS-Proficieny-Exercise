@@ -66,7 +66,7 @@
         
         if (!error) {
             // Success repsosne
-            NSLog(@"Success Response");
+            NSLog(@"Success Response received");
             
             // Instantiate the DetaisTableViewcontroller with plain style and set the response object paramter
             DetailsTableViewController *detailsTableViewControllerObj= [[DetailsTableViewController alloc]initWithStyle:UITableViewStylePlain];
@@ -84,7 +84,7 @@
         else{
             
             // Failure Scenario
-            NSLog(@"UnSuccessfull Response");
+            NSLog(@"UnSuccessfull Response Received");
         }
     }];
     

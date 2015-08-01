@@ -7,8 +7,8 @@
 //
 
 #import "NetworkClient.h"
+#import "PacteraConstants.h"
 
-static NSString * const kBaseURLString = @"https://dl.dropboxusercontent.com/";  // Base URL string
 
 
 @implementation NetworkClient
@@ -25,7 +25,7 @@ static NSString * const kBaseURLString = @"https://dl.dropboxusercontent.com/"; 
     // making use of dispatch_once to creat singleton object
     dispatch_once(&onceToken, ^{
         
-        _sharedClient = [[NetworkClient alloc]initWithBaseURL:[NSURL URLWithString:kBaseURLString]];
+        _sharedClient = [[NetworkClient alloc]initWithBaseURL:[NSURL URLWithString:BASEURLSTRING]];
         
         // SSL pinning policy is set to None
         _sharedClient.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];

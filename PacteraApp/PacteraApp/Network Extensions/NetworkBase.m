@@ -9,11 +9,9 @@
 #import "NetworkBase.h"
 #import "NetworkClient.h"
 #import "Details.h"
+#import "PacteraConstants.h"
 #import "ResponseObject.h"
 
-// Key used for parsing from JSON reponse
-static NSString * const kTitleName = @"title";
-static NSString * const kRows = @"rows";
 
 @implementation NetworkBase
 
@@ -29,8 +27,8 @@ static NSString * const kRows = @"rows";
         // Success Response
         
         // Get the values of the title and details from the response
-        NSString *title = [responseObject valueForKeyPath:kTitleName];
-        NSArray *detailsReponseArray = [responseObject valueForKeyPath:kRows];
+        NSString *title = [responseObject valueForKeyPath:TITLENAME];
+        NSArray *detailsReponseArray = [responseObject valueForKeyPath:ROWS];
         
         NSMutableArray *detailsObjArray=[[NSMutableArray alloc]initWithCapacity:[detailsReponseArray count]];
         

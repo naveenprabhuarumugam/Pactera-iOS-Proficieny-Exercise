@@ -8,12 +8,9 @@
 
 #import "Details.h"
 #import "PacteraUtility.h"
+#import "PacteraConstants.h"
 
 
-// Keys used for parsing from JSON reponse
-static NSString * const kTitleName = @"title";
-static NSString * const kDescription = @"description";
-static NSString * const kImageHref = @"imageHref";
 
 
 @implementation Details
@@ -22,25 +19,25 @@ static NSString * const kImageHref = @"imageHref";
 -(BOOL)conformsToValues:(NSDictionary *)reponseDict{
     PacteraUtility *utility = [PacteraUtility instance];
     
-    if (![utility isValidString:[reponseDict valueForKeyPath:kTitleName]] && ![utility isValidString:[reponseDict valueForKeyPath:kDescription]] && ![utility isValidString:[reponseDict valueForKeyPath:kImageHref]]) {
+    if (![utility isValidString:[reponseDict valueForKeyPath:TITLENAME]] && ![utility isValidString:[reponseDict valueForKeyPath:DESCRIPTION]] && ![utility isValidString:[reponseDict valueForKeyPath:IMAGEHREF]]) {
         return NO;
     }
     
     
-    if ([utility isValidString:[reponseDict valueForKeyPath:kDescription]] ) {
-        self.detailedDescription = [reponseDict valueForKeyPath:kDescription];
+    if ([utility isValidString:[reponseDict valueForKeyPath:DESCRIPTION]] ) {
+        self.detailedDescription = [reponseDict valueForKeyPath:DESCRIPTION];
     }
     else{
         self.detailedDescription = @"Sorry, No Description Available";
     }
-    if ([utility isValidString:[reponseDict valueForKeyPath:kImageHref]] ) {
-        self.imageHref = [reponseDict valueForKeyPath:kImageHref];
+    if ([utility isValidString:[reponseDict valueForKeyPath:IMAGEHREF]] ) {
+        self.imageHref = [reponseDict valueForKeyPath:IMAGEHREF];
     }
     else{
         self.imageHref = @"";
     }
     
-    self.title = [reponseDict valueForKeyPath:kTitleName];
+    self.title = [reponseDict valueForKeyPath:TITLENAME];
     
     return YES;
 }

@@ -203,4 +203,15 @@ static NSString *CellIdentifier = @"CellIdentifier";
     [alertView show];
 }
 
+
+#pragma mark -
+#pragma mark dealloc
+-(void)dealloc
+{
+    [_offscreenCells release];
+    [_responseObject release];
+    
+    [super dealloc];
+}
+
 @end

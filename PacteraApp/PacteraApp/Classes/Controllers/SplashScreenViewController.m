@@ -15,8 +15,6 @@
 // UIActivity Indicato to be displayed when service call is made
 @property (nonatomic,retain) UIActivityIndicatorView *activityIndicatorView;
 
-// Response Object contains parsed tittle name and details
-@property (nonatomic,retain) ResponseObject *responeObject;
 
 // Error message from service all is displayed to the user
 -(void)showErrorAlert:(NSError *)error;
@@ -163,6 +161,14 @@
     
     // On tap of retry button in alert invoke network call again
     [self loadDetailsAboutCanada];
+}
+
+#pragma mark -
+#pragma mark dealloc
+-(void)dealloc
+{
+    [_activityIndicatorView release];
+    [super dealloc];
 }
 
 

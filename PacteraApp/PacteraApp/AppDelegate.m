@@ -36,6 +36,7 @@
     [splashVCObj release];
     [navigationControllerObj release];
     
+    
     [self.window makeKeyAndVisible];
     
     

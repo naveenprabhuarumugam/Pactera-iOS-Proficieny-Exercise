@@ -30,6 +30,56 @@
     // Do any additional setup after loading the view.
     [self.view setBackgroundColor:[UIColor greenColor]];
     
+    // Allocate backgrounf image view fro the splash screen
+    UIImageView *backGroundImageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Pacteranew"]];
+    [self.view addSubview:backGroundImageView];
+
+    // Do not resize Autoresizing mask to constraints
+    [backGroundImageView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    
+    // Add Leading constraint to image view w.r.t self.vie
+    [self.view addConstraint:[NSLayoutConstraint
+                              constraintWithItem:backGroundImageView
+                              attribute:NSLayoutAttributeLeading
+                              relatedBy:NSLayoutRelationEqual
+                              toItem:self.view
+                              attribute:NSLayoutAttributeLeading
+                              multiplier:1
+                              constant:0]];
+    
+    // Add Traiing constraint to image view w.r.t self.vie
+    [self.view addConstraint:[NSLayoutConstraint
+                              constraintWithItem:backGroundImageView
+                              attribute:NSLayoutAttributeTrailing
+                              relatedBy:NSLayoutRelationEqual
+                              toItem:self.view
+                              attribute:NSLayoutAttributeTrailing
+                              multiplier:1
+                              constant:0]];
+    
+    // Add Top constraint to image view w.r.t self.vie
+    [self.view addConstraint:[NSLayoutConstraint
+                              constraintWithItem:backGroundImageView
+                              attribute:NSLayoutAttributeTop
+                              relatedBy:NSLayoutRelationEqual
+                              toItem:self.view
+                              attribute:NSLayoutAttributeTop
+                              multiplier:1
+                              constant:0]];
+    
+    // Add Bottom constraint to image view w.r.t self.vie
+    [self.view addConstraint:[NSLayoutConstraint
+                              constraintWithItem:backGroundImageView
+                              attribute:NSLayoutAttributeBottom
+                              relatedBy:NSLayoutRelationEqual
+                              toItem:self.view
+                              attribute:NSLayoutAttributeBottom
+                              multiplier:1
+                              constant:0]];
+    
+    [backGroundImageView release];
+
+    
     // Instantiates the activityindicator View and releasing it after transferrign the ownership
     UIActivityIndicatorView *activityIndicatorObj= [[UIActivityIndicatorView alloc]init];
     self.activityIndicatorView =activityIndicatorObj;
